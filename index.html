@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <title>Bordas</title>
+  </head>
+  <body>
+    <main>
+
+      <!--Titulo-->
+
+      <p>Bordas</p>
+
+      <!--Corpo do site-->
+
+      <section class="s_conteudo">
+
+        <!--Parte 1 do form-->
+
+        <form class="form1">
+          <div>
+            <label>Tamanho</label>
+            <br />
+            <input
+              type="text"
+              id="id_tamanho"
+              class="i_text"
+              onchange="borda();"
+              value="1"
+            />
+          </div>
+
+          <div>
+            <label>Estilo</label>
+            <br />
+            <input
+              type="text"
+              id="id_estilo"
+              onchange="borda();"
+              class="i_text"
+              value="solid"
+            />
+          </div>
+          <div>
+            <label>Cor</label>
+            <br />
+            <input type="text" id="id_cor" onchange="borda();" class="i_text" value="black" />
+          </div>
+          <div>
+            <label>Radius</label>
+            <br />
+            <input
+              type="text"
+              id="id_radius"
+              onchange="borda();"
+              class="i_text"
+            />
+          </div>
+        </form>
+
+        <!--Parte 2 do form-->
+
+        <form class="form2">
+          <div class="d_radius">
+            <img src="img/top-left.svg" alt="" height="64px" width="64px" />
+            <input
+              type="text"
+              id="id_radius_topleft"
+              onchange="borda();"
+              class="i_mtext"
+              value="0"
+            />
+          </div>
+          <div class="d_radius">
+            <img src="img/Top-right.svg" alt="" height="64px" width="64px" />
+            <input
+              type="text"
+              id="id_radius_topright"
+              onchange="borda();"
+              class="i_mtext"
+              value="0"
+            />
+          </div>
+          <div class="d_radius">
+            <img src="img/bottom-left.svg" alt="" height="64px" width="64px" />
+            <input
+              type="text"
+              id="id_radius_bottomleft"
+              onchange="borda();"
+              class="i_mtext"
+              value="0"
+            />
+          </div>
+          <div class="d_radius">
+            <img src="img/bottom-right.svg" alt="" height="64px" width="64px"/>
+            <input
+              type="text"
+              id="id_radius_bottomright"
+              onchange="borda();"
+              class="i_mtext"
+              value="0"
+            />
+          </div>
+        </form>
+
+        <!--bloco que vai ser alterado-->
+
+        <div class="d_bloco" id="bloco"><span class="sp_bloco"></span></div>
+        <p id="resultado_border">border:</p>
+        <p id="resultado_radius">border-radius:</p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+/*Geral*/
+
+body,
+main {
+  margin: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  background-color: #1d1d1b;
+}
+
+main {
+  height: calc(fit-content + 20px);
+  width: 100vw;
+  background-color: #1d1d1b;
+  display: grid;
+  place-content: center;
+}
+
+p {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+  width: fit-content;
+  place-self: center;
+}
+
+/*Corpor do Site*/
+section {
+  background-color: white;
+  padding: 50px;
+  width: fit-content;
+  border-radius: 10px;
+  display: grid;
+  place-self: center;
+}
+
+/*formulario*/
+.form1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-self: center;
+  column-gap: 30px;
+}
+
+div {
+  margin-top: 20px;
+}
+
+input {
+  margin-top: 10px;
+}
+
+.i_text {
+  border: #707070;
+  background-color: #ececec;
+  border-radius: 16px;
+  height: 32px;
+  text-align: center;
+}
+
+
+/*formulario parte 2*/
+.form2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  align-content: center;
+  place-self: center;
+}
+.d_radius {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.d_radius img {
+  place-self: center;
+}
+
+.i_mtext {
+  border: #707070;
+  background-color: #ececec;
+  border-radius: 16px;
+  height: 32px;
+  width: 42px;
+  text-align: center;
+  place-self: center;
+}
+
+
+
+.d_bloco {
+  height: 230px;
+  width: 230px;
+  display: grid;
+  place-self: center;
+  text-align: center;
+  border: solid;
+}
