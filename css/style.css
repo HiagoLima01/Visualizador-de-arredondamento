@@ -58,7 +58,13 @@ input {
   text-align: center;
 }
 
-
+.d_cor{
+  grid-column: 1/-1;
+  display: grid;
+  align-content: center;
+  place-content: center;
+  text-align: center;
+}
 /*formulario parte 2*/
 .form2 {
   display: grid;
